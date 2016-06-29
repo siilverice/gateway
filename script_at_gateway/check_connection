@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sshpass -p 'passwordToDell4' ssh ceph@10.0.1.14 'ls -l'

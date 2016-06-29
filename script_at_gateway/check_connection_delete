@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sshpass -p 'passwordToDell4' ssh ceph@10.0.1.14 'cd /home/ceph/Tiramisu/tiramisu_src && ls -l delete_vm.py && ls -l automated_move/check_shutdown_vm'

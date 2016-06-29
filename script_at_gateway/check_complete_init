@@ -1,0 +1,7 @@
+#!/bin/bash
+
+command="cd /home/ceph/Tiramisu/tiramisu_src/init_vm && sudo ./kvm_findip "
+command="$command$1"
+echo $command
+
+sshpass -p 'passwordToDell4' ssh -t ceph@10.0.1.14 $command

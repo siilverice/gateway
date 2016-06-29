@@ -1,0 +1,8 @@
+#!/bin/bash
+
+command="cd /home/ceph/Tiramisu/tiramisu_src/init_vm && python init_vm_for_user.py "
+command="$command$1"
+command="$command $2"
+command="$command $3"
+echo $command
+sshpass -p 'passwordToDell4' ssh -t ceph@10.0.1.14 $command
